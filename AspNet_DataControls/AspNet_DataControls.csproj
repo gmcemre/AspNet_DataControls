@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -67,9 +73,80 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ProductRepeater.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Alfabetik_Sirali_Urunler_Listesi.cs" />
+    <Compile Include="Models\Ayrintili_Satis_Detaylari.cs" />
+    <Compile Include="Models\Biten_Urunler_Listesi.cs" />
+    <Compile Include="Models\Bolge.cs" />
+    <Compile Include="Models\Bolgeler.cs" />
+    <Compile Include="Models\C1997_Yili_Urun_Satislari.cs" />
+    <Compile Include="Models\Faturalar.cs" />
+    <Compile Include="Models\Kategoriler.cs" />
+    <Compile Include="Models\Kategorilere_Gore_1997_Yili_Satislari.cs" />
+    <Compile Include="Models\Kategorilere_Gore_Satislar.cs" />
+    <Compile Include="Models\Kategorilere_Gore_Urunler.cs" />
+    <Compile Include="Models\Kisiler.cs" />
+    <Compile Include="Models\Mapping\Alfabetik_Sirali_Urunler_ListesiMap.cs" />
+    <Compile Include="Models\Mapping\Ayrintili_Satis_DetaylariMap.cs" />
+    <Compile Include="Models\Mapping\Biten_Urunler_ListesiMap.cs" />
+    <Compile Include="Models\Mapping\BolgelerMap.cs" />
+    <Compile Include="Models\Mapping\BolgeMap.cs" />
+    <Compile Include="Models\Mapping\C1997_Yili_Urun_SatislariMap.cs" />
+    <Compile Include="Models\Mapping\FaturalarMap.cs" />
+    <Compile Include="Models\Mapping\Kategorilere_Gore_1997_Yili_SatislariMap.cs" />
+    <Compile Include="Models\Mapping\Kategorilere_Gore_SatislarMap.cs" />
+    <Compile Include="Models\Mapping\Kategorilere_Gore_UrunlerMap.cs" />
+    <Compile Include="Models\Mapping\KategorilerMap.cs" />
+    <Compile Include="Models\Mapping\KisilerMap.cs" />
+    <Compile Include="Models\Mapping\MusteriDemographicMap.cs" />
+    <Compile Include="Models\Mapping\MusterilerMap.cs" />
+    <Compile Include="Models\Mapping\NakliyecilerMap.cs" />
+    <Compile Include="Models\Mapping\Ortalama_Maliyetin_Uzerindeki_UrunlerMap.cs" />
+    <Compile Include="Models\Mapping\Ozet_Ceyrek_SatislarMap.cs" />
+    <Compile Include="Models\Mapping\Ozet_Yillik_SatislarMap.cs" />
+    <Compile Include="Models\Mapping\PersonellerMap.cs" />
+    <Compile Include="Models\Mapping\PersonelRaporMap.cs" />
+    <Compile Include="Models\Mapping\Satislarin_Toplam_MiktariMap.cs" />
+    <Compile Include="Models\Mapping\SatislarMap.cs" />
+    <Compile Include="Models\Mapping\Satislar_SorgusuMap.cs" />
+    <Compile Include="Models\Mapping\Satis_Alt_ToplamlariMap.cs" />
+    <Compile Include="Models\Mapping\Satis_DetaylariMap.cs" />
+    <Compile Include="Models\Mapping\Sehirlere_Gore_Musteri_ve_TedarikcilerMap.cs" />
+    <Compile Include="Models\Mapping\sysdiagramMap.cs" />
+    <Compile Include="Models\Mapping\TedarikcilerMap.cs" />
+    <Compile Include="Models\Mapping\UrunlerMap.cs" />
+    <Compile Include="Models\Mapping\UrunRaporMap.cs" />
+    <Compile Include="Models\Mapping\UrunResimMap.cs" />
+    <Compile Include="Models\MusteriDemographic.cs" />
+    <Compile Include="Models\Musteriler.cs" />
+    <Compile Include="Models\Nakliyeciler.cs" />
+    <Compile Include="Models\NorthwindContext.cs" />
+    <Compile Include="Models\Ortalama_Maliyetin_Uzerindeki_Urunler.cs" />
+    <Compile Include="Models\Ozet_Ceyrek_Satislar.cs" />
+    <Compile Include="Models\Ozet_Yillik_Satislar.cs" />
+    <Compile Include="Models\Personeller.cs" />
+    <Compile Include="Models\PersonelRapor.cs" />
+    <Compile Include="Models\Satislar.cs" />
+    <Compile Include="Models\Satislarin_Toplam_Miktari.cs" />
+    <Compile Include="Models\Satislar_Sorgusu.cs" />
+    <Compile Include="Models\Satis_Alt_Toplamlari.cs" />
+    <Compile Include="Models\Satis_Detaylari.cs" />
+    <Compile Include="Models\Sehirlere_Gore_Musteri_ve_Tedarikciler.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\Tedarikciler.cs" />
+    <Compile Include="Models\Urunler.cs" />
+    <Compile Include="Models\UrunRapor.cs" />
+    <Compile Include="Models\UrunResim.cs" />
+    <Compile Include="ProductRepeater.aspx.cs">
+      <DependentUpon>ProductRepeater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductRepeater.aspx.designer.cs">
+      <DependentUpon>ProductRepeater.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
