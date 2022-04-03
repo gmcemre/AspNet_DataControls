@@ -73,10 +73,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CategoryRepeater.aspx" />
     <Content Include="ProductRepeater.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryRepeater.aspx.cs">
+      <DependentUpon>CategoryRepeater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryRepeater.aspx.designer.cs">
+      <DependentUpon>CategoryRepeater.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Alfabetik_Sirali_Urunler_Listesi.cs" />
     <Compile Include="Models\Ayrintili_Satis_Detaylari.cs" />
     <Compile Include="Models\Biten_Urunler_Listesi.cs" />
